@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>AutoservisJJU</title>
+
+    <style>
+        :root {
+            --color-primary: #f93239;
+            /* --color-primary: #E32014; */
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        .top-nav {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        .carousel-settings {
+            max-height: 70vh;
+        }
+
+        .carousel-settings img {
+            filter: brightness(40%);
+        }
+
+        .content-section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .about-us {
+            text-align: center;
+        }
+
+        .parallax {
+            background-image: url("images/car_opp_50.jpg");
+            min-height: 200px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parallax h1 {
+            font-size: 5rem;
+            color: white;
+        }
+
+        .service-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .service-card-icon {
+            width: 100px;
+            padding-bottom: 20px;
+        }
+
+        .service-card-heading {
+            color: darkgray;
+        }
+
+        .service-card-description {
+            text-align: justify;
+        }
+
+        .footer {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-nav p-2 d-flex justify-content-between align-items-center">
+        <div>
+            <img class="p-1" src="./icons/telephone-fill.svg" alt="location" />
+            <a class="text-decoration-none text-white" href="tel:420722160685">+420 722 160 685</a>
+        </div>
+        <div class="d-none d-md-block">
+            Kompletní služby pro Vás i Váš vůz
+        </div>
+        <div>
+            <a class="text-decoration-none text-white" href="https://www.facebook.com" target="_blank" rel="noreferrer">
+                <img class="p-1" src="./icons/facebook.svg" alt="location" />
+            </a>
+            <a class="text-decoration-none text-white" href="https://www.instagram.com" target="_blank"
+                rel="noreferrer">
+                <img class="p-1" src="./icons/instagram.svg" alt="location" />
+            </a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="./images/Autoservis_Black.svg" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel-settings">
+                    <img src="./images/car.jpg" class="d-block w-100" alt="car image">
+                    <div class="carousel-caption">
+                        <h1>Autoservis Uchytil</h1>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+                        <h2>+420 722 160 685</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="content-section about-us container">
+            <h2>O nás</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, aspernatur soluta? Vitae doloremque
+            adipisci vero culpa, debitis, voluptas incidunt consectetur cumque numquam aspernatur non dignissimos unde
+            libero facere? Dolorum, obcaecati.
+        </section>
+
+        <div class="parallax">
+            <h1>naše služby</h1>
+        </div>
+
+        <section class="content-section container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, aspernatur soluta? Vitae doloremque
+            adipisci vero culpa, debitis, voluptas incidunt consectetur cumque numquam aspernatur non dignissimos unde
+            libero facere? Dolorum, obcaecati.
+
+            <div class="row">
+                <div class="col-md-4 service-card">
+                    <img class="service-card-icon" src="./images/wheel-svgrepo-com.svg" alt="wheel" />
+                    <h5 class="service-card-heading">Lorem ipsum</h5>
+                    <div class="service-card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, at ipsa illum repellat enim
+                        molestiae! Fugiat ducimus provident quasi, incidunt sunt deleniti omnis, a animi natus earum
+                        fugit exercitationem eos!
+                    </div>
+                </div>
+                <div class="col-md-4 service-card">
+                    <img class="service-card-icon" src="./images/wrench-svgrepo-com.svg" alt="wheel" />
+                    <h5 class="service-card-heading">Lorem ipsum</h5>
+                    <div class="service-card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, at ipsa illum repellat enim
+                        molestiae! Fugiat ducimus provident quasi, incidunt sunt deleniti omnis, a animi natus earum
+                        fugit exercitationem eos!
+                    </div>
+                </div>
+                <div class="col-md-4 service-card">
+                    <img class="service-card-icon" src="./images/wheel-svgrepo-com.svg" alt="wheel" />
+                    <h5 class="service-card-heading">Lorem ipsum</h5>
+                    <div class="service-card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, at ipsa illum repellat enim
+                        molestiae! Fugiat ducimus provident quasi, incidunt sunt deleniti omnis, a animi natus earum
+                        fugit exercitationem eos!
+                    </div>
+                </div>
+
+                <div class="col-md-4 service-card">
+                    <img class="service-card-icon" src="./images/wrench-svgrepo-com.svg" alt="wheel" />
+                    <h5 class="service-card-heading">Lorem ipsum</h5>
+                    <div class="service-card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, at ipsa illum repellat enim
+                        molestiae! Fugiat ducimus provident quasi, incidunt sunt deleniti omnis, a animi natus earum
+                        fugit exercitationem eos!
+                    </div>
+                </div>
+                <div class="col-md-4 service-card">
+                    <img class="service-card-icon" src="./images/drop-svgrepo-com.svg" alt="wheel" />
+                    <h5 class="service-card-heading">Lorem ipsum</h5>
+                    <div class="service-card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, at ipsa illum repellat enim
+                        molestiae! Fugiat ducimus provident quasi, incidunt sunt deleniti omnis, a animi natus earum
+                        fugit exercitationem eos!
+                    </div>
+                </div>
+                <div class="col-md-4 service-card">
+                    <img class="service-card-icon" src="./images/wheel-svgrepo-com.svg" alt="wheel" />
+                    <h5 class="service-card-heading">Lorem ipsum</h5>
+                    <div class="service-card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, at ipsa illum repellat enim
+                        molestiae! Fugiat ducimus provident quasi, incidunt sunt deleniti omnis, a animi natus earum
+                        fugit exercitationem eos!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.5515749627934!2d14.525576777149274!3d50.150820171536544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bec5cb7a985ab%3A0xcfdf35b9b8f0ab49!2zSmnFmcOtIEhvbGlja8O9!5e0!3m2!1sen!2scz!4v1709591074871!5m2!1sen!2scz"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <div class="col-md-6 mt-md-0 mt-5 ps-md-5">
+                        <div class="d-flex align-items-start pb-3">
+                            <div class="me-2">
+                                <img src="./icons/geo-alt-fill.svg" alt="location" />
+                            </div>
+                            <div>
+                                <strong>Autoservis Uchytil</strong>
+                                <br />
+                                Provozovna
+                                <br />
+                                nám. Jiřího Berana 191, 196 00 Praha-Čakovice
+                                <br />
+                                IČO: 1234566
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start pb-3">
+                            <div class="me-2">
+                                <img src="./icons/telephone-fill.svg" alt="location" />
+                            </div>
+                            <div>
+                                <a class="text-decoration-none text-white" href="tel:420722160685">+420 722 160 685</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start pb-3">
+                            <div class="me-2">
+                                <img src="./icons/envelope-fill.svg" alt="location" />
+                            </div>
+                            <div>
+                                <a class="text-decoration-none text-white"
+                                    href="mailto:info@uchytil.cz">info@uchytil.cz</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start pb-3">
+                            <div class="me-2">
+                                <img src="./icons/facebook.svg" alt="location" />
+                            </div>
+                            <div>
+                                <a class="text-decoration-none text-white" href="https://www.facebook.com"
+                                    target="_blank" rel="noreferrer">Facebook</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start pb-3">
+                            <div class="me-2">
+                                <img src="./icons/instagram.svg" alt="location" />
+                            </div>
+                            <div>
+                                <a class="text-decoration-none text-white" href="https://www.instagram.com"
+                                    target="_blank" rel="noreferrer">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>

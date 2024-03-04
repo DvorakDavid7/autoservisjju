@@ -1,0 +1,14 @@
+{
+    "name": "david/autoservisjju",
+    "autoload": {
+        "psr-4": {
+            "David\\Autoservisjju\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Dvořák",
+            "email": "ddvorak@trask.cz"
+        }
+    ]
+}
